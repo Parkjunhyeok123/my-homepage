@@ -700,19 +700,26 @@
         <div class="section-content">
           <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-8">
-              <form id="contact_form" action="contact-form.php" method="POST">
+              <form action="https://formsubmit.co/park0630p@naver.com" method="POST">
                 <div class="row">
                   <div class="col">
-                    <input type="text" id="your_name" class="form-input w-100" name="full-name" placeholder="Full Name" required>
+                    <input type="text" id="your_name" class="form-input w-100" name="name" placeholder="Full Name" required>
                   </div>
                   <div class="col">
                     <input type="email" id="email" class="form-input w-100" name="email" placeholder="Email" required>
                   </div>
                 </div>
+              
                 <input type="text" id="subject" class="form-input w-100" name="subject" placeholder="Subject">
-                <textarea class="form-input w-100" id="message" placeholder="Message" name="message"></textarea>
-                <button class="btn-grad w-100 text-uppercase" type="submit" name="button">submit</button>
+                <textarea class="form-input w-100" id="message" name="message" placeholder="Message" required></textarea>
+              
+                <!-- 추가 옵션 (숨김 필드) -->
+                <input type="hidden" name="_next" value="https://parkjunhyeok123.github.io/my-homepage/thank-you.html">
+                <input type="hidden" name="_captcha" value="false">
+              
+                <button class="btn-grad w-100 text-uppercase" type="submit">Submit</button>
               </form>
+              
             </div>
             <div class="col-sm-12 col-md-12 col-lg-4">
               <div class="contact-info white">
