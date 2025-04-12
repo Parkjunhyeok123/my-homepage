@@ -600,4 +600,73 @@ h3 {
 .footer-copy p {
 	font-size: 10px;
 }
+/* Achievements 섹션 스타일 */
+.achievements .section-padding {
+	padding: 60px 0;
+	background-color: #f9f9f9;
+  }
+  
+  .achievements .sectioner-header h3 {
+	font-size: 32px;
+	margin-bottom: 15px;
+	color: #333;
+  }
+  
+  .achievements .line {
+	width: 60px;
+	height: 3px;
+	background-color: #ff6347;
+	margin: 0 auto;
+  }
+  
+  .achievements h4 {
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: #333;
+  }
+  
+  .achievements .achievement-card {
+	background-color: #fff;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	margin-bottom: 30px;
+	border-radius: 10px;
+	overflow: hidden;
+	transition: all 0.3s ease;
+  }
+  
+  .achievements .achievement-card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .achievements .achievement-img img {
+	width: 100%;
+	height: auto;
+	border-bottom: 2px solid #f1f1f1;
+  }
+  
+  .achievements .achievement-text {
+	padding: 20px;
+  }
+  
+  .achievements .achievement-text h5 {
+	font-size: 20px;
+	color: #333;
+	margin-bottom: 10px;
+  }
+  
+  .achievements .achievement-text p {
+	font-size: 16px;
+	color: #555;
+	line-height: 1.6;
+  }
+  
+  /* 모바일 대응 */
+  @media (max-width: 767px) {
+	.achievements .col-md-4 {
+	  margin-bottom: 20px;
+	}
+  }
+  
+
 }
