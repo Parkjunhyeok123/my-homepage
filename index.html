@@ -302,9 +302,20 @@
         <div class="feature-details-box mb-5" id="feature-ui">
           <h4><a href="#feature-ui" class="text-decoration-none text-dark">📱 사용자 친화적 인터페이스</a></h4>
           <p>
-            본 앱은 직관적인 디자인과 <strong>Navigation Drawer</strong>를 기반으로 구성되어 있으며, 사용자에게 홈, 커뮤니티, 마이페이지 등의 메뉴에 빠르게 접근할 수 있도록 설계되었습니다.
-            각 메뉴는 명확한 아이콘과 텍스트로 구성되어 있어 앱을 처음 사용하는 사용자도 쉽게 사용할 수 있습니다.
+            본 앱은 직관적인 디자인과 <strong>Navigation Drawer</strong>를 기반으로 구성되어 있어 사용자들이 홈, 커뮤니티, 마이페이지 등 주요 메뉴에 빠르게 접근할 수 있도록 설계되었습니다.
           </p>
+          
+          <ul>
+            <li><strong>📂 메뉴 구조:</strong> 홈, 커뮤니티, 마이페이지 등으로 명확하게 구분된 구성(직접 개발)</li>
+            <li><strong>🎯 빠른 접근:</strong> Navigation Drawer를 통해 원하는 메뉴를 빠르게 열 수 있음 (직접 개발)</li>
+            <li><strong>🧭 쉬운 탐색:</strong> 각 메뉴에는 직관적인 <strong>아이콘 + 텍스트</strong>가 함께 제공되어 처음 사용하는 사용자도 쉽게 이용 가능(직접 개발)</li>
+          </ul>
+               
+           
+          <p>
+            이러한 구성은 사용자 경험(UX)을 고려한 설계로, 앱의 접근성과 사용 편의성을 높이는 데 큰 역할을 합니다.
+          </p>
+            
           <div class="feature-image text-center mb-4">
             <img src="images/path_to_ui_screenshot.png" alt="사용자 친화적 인터페이스 화면" class="img-fluid rounded shadow" style="width: 40%;"/>
           </div>
@@ -323,14 +334,22 @@
             <img src="images/path_to_station_screenshot.png" alt="충전소 정보 표시 화면" class="img-fluid rounded shadow" style="width: 40%;" />
           </div>
           <p>
-            위 이미지는 실제 구현된 실시간 충전소 정보 화면을 보여줍니다. 사용자의 위치에 따라 가까운 충전소가 마커로 표시되고, 마커 색상으로 충전소의 상태를 확인할 수 있습니다.
+            위 이미지는 실제 구현된 실시간 충전소 정보 화면을 보여줍니다. 사용자의 위치에 따라 가까운 충전소가 마커로 표시되며, 마커 색상으로 충전소의 상태를 쉽게 확인할 수 있습니다.
           </p>
-        </div>
-
-        <div class="feature-details-box mb-5" id="feature-station-detail">
-          <h4><a href="#feature-station-detail" class="text-decoration-none text-dark">ℹ️ 충전소 상세정보</a></h4>
+          
+          <div class="feature-details-box mb-5" id="feature-station-detail">
+            <h4><a href="#feature-station-detail" class="text-decoration-none text-dark">ℹ️ 충전소 상세정보</a></h4>
+            <ul>
+              <li><strong>📍 현재 위치 확인:</strong> GPS를 통해 사용자의 실시간 위치를 받아옵니다.</li>
+              <li><strong>🔄 충전소 데이터 로딩:</strong> Firebase에서 충전소 정보를 불러옵니다. (직접 개발)</li>
+              <li><strong>🗺️ 지도에 마커 표시:</strong> Google Maps에 충전소 위치를 마커로 표시합니다.</li>
+              <li><strong>👆 마커 클릭 시 상세 정보 제공:</strong> 운영 시간, 충전기 타입, 상태 등을 확인할 수 있습니다. (직접 개발)</li>
+              <li><strong>⭐ 즐겨찾기 기능:</strong> 사용자가 관심 있는 충전소를 즐겨찾기할 수 있으며, Firebase DB와 연동되어 사용자가 설정한 즐겨찾기를 저장하고 관리할 수 있습니다. (직접 개발)</li>
+            </ul>
+          </div>
+          
           <p>
-            마커 클릭 시 운영 시간, 충전기 타입, 상태 등의 상세 정보를 제공하여 사용자가 충전소에 대해 더 많은 정보를 얻을 수 있습니다.
+            이러한 기능을 통해 사용자는 한눈에 주변 충전소 정보를 파악하고, 원하는 충전소를 빠르게 선택해 이용할 수 있습니다.
           </p>
           <div class="feature-image text-center mb-4">
             <img src="images/path_to_detailed_info_screenshot.png" alt="충전소 상세정보 화면" class="img-fluid rounded shadow" style="width: 40%;"/>
@@ -343,8 +362,23 @@
         <div class="feature-details-box mb-5" id="feature-community">
           <h4><a href="#feature-community" class="text-decoration-none text-dark">💬 커뮤니티 게시판</a></h4>
           <p>
-            질문, 자유게시판, 리뷰 등 다양한 카테고리로 구성된 소통 공간을 제공합니다. 사용자는 다양한 주제로 의견을 나누고, 정보를 교류할 수 있습니다.
+            본 앱은 질문, 자유게시판, 리뷰, 공지사항 등 다양한 카테고리로 구성된 <strong>소통 공간</strong>을 제공합니다.
           </p>
+          
+          <ul>
+            <li><strong>💬 질문 게시판:</strong> 사용자가 궁금한 점을 자유롭게 묻고 답변을 주고받을 수 있는 공간 (공동 개발)</li>
+            <li><strong>📝 자유게시판:</strong> 일상 공유 및 다양한 주제로 자유롭게 소통할 수 있는 커뮤니티 (공동 개발)</li>
+            <li><strong>⭐ 리뷰 게시판:</strong> 충전소 이용 후기를 공유하고, 타 사용자와 경험을 나눌 수 있음 (공동 개발)</li>
+            <li><strong>📢 공지사항:</strong> 앱 업데이트, 이벤트, 시스템 점검 등 주요 정보를 공식적으로 전달(공동 개발)</li>
+          </ul>
+          
+          <p>
+            이러한 소통 기능은 단순한 게시판을 넘어, 사용자 간 <strong>정보 교류 및 커뮤니티 형성</strong>에 기여합니다.<br>
+            더불어, <strong>정기적인 정보 공유</strong>는 사용자 참여도를 높이고, 결과적으로 앱의 <strong>이용 시간과 사용 빈도 증가</strong>로 이어집니다.<br>
+            소통 기능의 기본적인 개발 부분은 <strong>직접 구현한 기능</strong>으로, 다른 팀원과의 협업을 통해 더 나은 사용자 경험을 제공할 수 있었습니다.
+          </p>
+          
+          
           <div class="feature-image text-center mb-4">
             <img src="images/path_to_community_screenshot.png" alt="커뮤니티 게시판 화면" class="img-fluid rounded shadow" style="width: 40%;"/>
           </div>
@@ -356,8 +390,20 @@
         <div class="feature-details-box mb-5" id="feature-mypage">
           <h4><a href="#feature-mypage" class="text-decoration-none text-dark">👤 마이페이지 기능</a></h4>
           <p>
-            내 정보 수정, 즐겨찾기 관리, 작성 게시글 확인 등 개인화된 기능을 통해 사용자는 자신의 정보를 손쉽게 관리할 수 있습니다.
+            본 앱은 사용자의 편의성을 높이기 위한 다양한 <strong>개인화 기능</strong>을 제공합니다.
           </p>
+          
+          <ul>
+            <li><strong>👤 내 정보 수정:</strong> 사용자가 직접 프로필 정보(이름, 비밀번호 등)를 손쉽게 수정할 수 있도록 구현(직접 개발)</li>
+            <li><strong>📌 즐겨찾기 관리:</strong> 자주 사용하는 충전소를 즐겨찾기에 등록하여 빠르게 접근 가능(직접 개발)</li>
+            <li><strong>🗂️ 게시글 확인:</strong> 사용자가 작성한 게시글을 한눈에 확인하고 관리할 수 있음</li>
+          </ul>
+          
+          <p>
+            특히 <strong>‘내 정보 수정’과 ‘즐겨찾기’ 기능은 직접 개발한 부분</strong>으로, 사용자 중심의 인터페이스와 데이터 처리 로직을 구현하여 개인화 경험을 강화했습니다.<br>
+            이러한 기능들은 사용자에게 <strong>앱 사용의 주도권</strong>을 부여하고, 자연스럽게 <strong>앱 만족도와 재사용률 향상</strong>으로 이어집니다.
+          </p>
+          
           <div class="feature-image text-center mb-4">
             <img src="images/path_to_mypage_screenshot.png" alt="마이페이지 화면" class="img-fluid rounded shadow" style="width: 40%;"/>
           </div>
@@ -369,7 +415,17 @@
         <div class="feature-details-box mb-5" id="feature-support">
           <h4><a href="#feature-support" class="text-decoration-none text-dark">📞 실시간 고객센터</a></h4>
           <p>
-            카카오톡 플러스친구를 통한 상담 연결을 통해 빠르고 편리한 고객 지원 서비스를 제공합니다.
+            본 앱은 <strong>카카오톡 플러스친구 상담 연결</strong>과 <strong>FAQ(Q&A) 데이터베이스 연동</strong>을 통해, 사용자가 자주 묻는 질문에 대한 답변을 빠르게 찾고 필요시 실시간 상담까지 받을 수 있도록 지원합니다.
+          </p>
+          
+          <ul>
+            <li><strong>📚 FAQ 기능 (직접 개발):</strong> 자주 묻는 질문과 답변을 데이터베이스와 연동하여, 반복적인 문의 없이 스스로 해결 가능</li>
+            <li><strong>💬 카카오톡 플러스친구 상담 (직접 개발):</strong> 간편한 클릭 한 번으로 고객센터와 실시간 상담 가능(직접 개발)</li>
+          </ul>
+          
+          <p>
+            위 기능은 단순한 정보 제공을 넘어, <strong>고객 지원의 자동화 및 접근성 향상</strong>에 초점을 맞추어 개발되었습니다.<br>
+            이를 통해 사용자 문의 대응 속도를 높이고, 고객 만족도와 신뢰도를 함께 향상시킬 수 있었습니다.
           </p>
           <div class="feature-image text-center mb-4">
             <img src="images/path_to_support_screenshot.png" alt="실시간 고객센터 화면" class="img-fluid rounded shadow" style="width: 40%;"/>
@@ -382,8 +438,23 @@
         <div class="feature-details-box mb-5" id="feature-admin">
           <h4><a href="#feature-admin" class="text-decoration-none text-dark">🛡️ 관리자 전용 기능</a></h4>
           <p>
-            Firebase 기반의 관리자 로그인 기능을 통해 충전소 데이터 관리, 게시글 모니터링, 사용자 정보 확인이 가능한 백오피스를 제공합니다.
+            본 앱은 <strong>Firebase 기반의 관리자 로그인 기능</strong>과 함께, 
+            <strong>충전소 데이터 관리, 게시글 모니터링, 사용자 정보 확인</strong>이 가능한 <strong>백오피스 기능</strong>을 제공합니다.
           </p>
+          
+          <ul>
+            <li><strong>🔐 관리자 로그인:</strong> Firebase Authentication을 활용해 관리자 권한으로 안전하게 로그인(직접 개발)</li>
+            <li><strong>🗺️ 충전소 관리:</strong> 등록된 충전소 정보(위치, 상태 등)를 확인하고 실시간 수정 가능(직접 개발)</li>
+            <li><strong>📝 게시글 모니터링:</strong> 커뮤니티 내 게시글을 확인하고 부적절한 콘텐츠에 대해 관리 가능(직접 개발)</li>
+
+          </ul>
+          
+          <p>
+            위 기능은 <strong>직접 개발한 관리자용 기능</strong>으로, 
+            Firebase Realtime Database 및 Firestore를 활용해 <strong>데이터 연동과 UI 설계</strong>를 구현했습니다.<br>
+            이를 통해 관리자는 앱을 보다 <strong>효율적이고 체계적으로 운영</strong>할 수 있으며, 서비스 품질 관리에도 용이합니다.
+          </p>
+          
           <div class="feature-image text-center mb-4">
             <img src="images/path_to_admin_screenshot.png" alt="관리자 기능 화면" class="img-fluid rounded shadow" style="width: 40%;"/>
           </div>
@@ -395,8 +466,20 @@
         <div class="feature-details-box mb-5" id="feature-settings">
           <h4><a href="#feature-settings" class="text-decoration-none text-dark">⚙️ 설정 기능</a></h4>
           <p>
-            설정 화면에서는 앱 버전 확인, 이용 약관, 타이머 및 알람 기능 등을 통해 사용자가 앱을 더 효율적으로 관리하고 사용할 수 있습니다.
+            본 앱의 <strong>설정 화면</strong>에서는 <strong>앱 버전 확인, 이용 약관, 타이머 및 알람 기능</strong> 등을 제공하여 사용자가 앱을 더 효율적으로 관리하고 사용할 수 있도록 설계되었습니다.
           </p>
+          
+          <ul>
+            <li><strong>🔄 앱 버전 확인:</strong> 사용자는 현재 앱의 최신 버전을 쉽게 확인하고, 필요시 업데이트를 진행할 수 있음(직접 개발)</li>
+            <li><strong>⏲️ 타이머 및 알람 기능:</strong> 충전 시간에 맞춰 타이머와 알람을 설정하여 사용자에게 알림 제공(직접 개발)</li>
+            <li><strong>📜 이용 약관:</strong> 앱 이용에 대한 약관을 확인하고 데이터베이스와 연동하여, 필요한 법적 사항을 관리하기 편하고 사용자가 쉽게게 볼 수 있음</li>
+          </ul>
+          
+          <p>
+            이 기능들은 <strong>직접 개발한 설정 화면</strong>으로, 사용자가 앱을 <strong>더욱 효율적이고 편리하게 관리</strong>할 수 있도록 돕습니다.<br>
+            특히, 타이머 및 알람 기능은 충전소 이용 시 사용자 편의성을 극대화하며, 앱을 더욱 직관적으로 만들어 사용자의 만족도를 높였습니다.
+          </p>
+          
           <div class="feature-image text-center mb-4">
             <img src="images/path_to_settings_screenshot.png" alt="설정 화면" class="img-fluid rounded shadow" style="width: 40%;"/>
           </div>
@@ -642,41 +725,53 @@
 
 
 
-<!-------FAQ Start------->
+<!-------목표 섹션 시작------->
 <section class="faq section-padding prelative" data-scroll-index='5'>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="sectioner-header text-center">
-          <h3>Frequently Asked Questions</h3>
+          <h3>앞으로의 목표</h3> <!-- 제목 변경 -->
           <span class="line"></span>
-          <p>Sed quis nisi nisi. Proin consectetur porttitor dui sit amet viverra. Fusce sit amet lorem faucibus, vestibulum ante in, pharetra ante.</p>
+          <p>저는 지속적으로 성장하는 개발자가 되기 위해 구체적인 단기, 중기, 장기 목표를 설정하고, 이를 달성하기 위한 계획을 세우고 있습니다.</p> <!-- 간략한 소개 추가 -->
         </div>
         <div class="section-content">
           <div class="row">
             <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.2s">
-              <h4>Nam tellus felis, dignissim quis dui ?</h4>
-              <p>Suspendisse fermentum placerat enim, at pellentesque augue. Nullam elit est, ultricies et tellus ac, euismod placerat orci. Donec commodo.</p>
+              <h4>단기 목표 (1-2년)</h4> <!-- 목표 제목 변경 -->
+              <p>단기적으로는 다음과 같은 목표를 달성할 계획입니다:</p>
+              <ul>
+                <li>Java 및 C++ 심화 학습: 알고리즘, 데이터 구조, 객체 지향 설계 등 기초적인 부분부터 고급 주제까지 다시 학습하여 깊이 있는 개발 역량을 갖추겠습니다.</li>
+                <li> 기술 강화:  일부분의 기술에 의지하지 않고 새로운 기술을 배우고, ### 에 대한 이해도를 높이기 위해 실습 프로젝트를 진행할 것입니다.</li>
+                <li>프로젝트 관리 경험 확대: 팀에서 프로젝트를 계획하는 부분에서  팀원들과 협력하고, 팀원들에게 도움이되는 일원이 되어 프로젝트 진행 상황을 효율적으로 관리하겠습니다.</li>
+              </ul>
             </div>
             <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.2s">
-              <h4>Mauris scelerisque, dui non faucibus vulputate ?</h4>
-              <p>Sed tempus in neque ac rhoncus. Phasellus vehicula, erat tempor malesuada egestas, mauris tellus malesuada erat, at vestibulum nulla ex et lectus. Nullam elit est, ultricies et tellus ac, euismod placerat orci.</p>
+              <h4>중기 목표 (3-5년)</h4> <!-- 목표 제목 변경 -->
+              <p>중기적으로는 다음과 같은 목표를 실현할 것입니다:</p>
+              <ul>
+                <li>소프트웨어 아키텍처 설계 능력 배양: 분산 시스템, 마이크로서비스 아키텍처 등 대규모 시스템 설계 및 구현 경험을 쌓고, 효율적이고 확장 가능한 시스템을 설계할 수 있는 능력을 키울 것입니다.</li>
+                <li>팀 리더십 역할 수행: 여러 개발팀과 협업하여 큰 규모의 프로젝트를 리드하며, 팀원들에게 기술적인 지도 및 피드백을 제공하고, 프로젝트 목표를 달성할 수 있도록 지원할 것입니다.</li>
+                <li>UI/UX 설계 및 개선 경험: 사용자 경험을 중시하며, 실제 사용자의 피드백을 반영하여 직관적이고 효율적인 UI/UX를 설계하고 개선하는 경험을 쌓을 것입니다.</li>
+              </ul>
             </div>
             <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.4s">
-              <h4>Nullam elit est, ultricies et tellus ac ?</h4>
-              <p>Ut vestibulum euismod aliquet. Quisque nec malesuada nibh. Vivamus euismod nunc eu leo faucibus, vel elementum justo posuere. In sed varius nisi. Curabitur id porta ipsum, et vestibulum dui.</p>
+              <h4>장기 목표 (10년 이상)</h4> <!-- 목표 제목 변경 -->
+              <p>장기적으로는 다음과 같은 목표를 달성할 것입니다:</p>
+              <ul>
+                <li>기술 리더십 확보: 회사나 기술 커뮤니티 내에서 영향력 있는 기술 리더로 성장하고, 기술적 방향성을 제시하며 혁신적인 프로젝트를 이끌어갈 것입니다.</li>
+                <li>지속적인 혁신 추구: 최신 기술 동향(인공지능, 블록체인 등)을 주의 깊게 분석하고, 이를 기반으로 새로운 제품이나 서비스를 기획 및 개발하여 시장에 혁신을 가져오겠습니다.</li>
+                <li>멘토링 및 후배 양성: 후배 개발자들에게 경험을 나누고, 그들의 성장을 돕기 위한 멘토링 프로그램을 운영하여 개발자 커뮤니티에 긍정적인 영향을 미칠 것입니다.</li>
+              </ul>
             </div>
             <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.4s">
-              <h4>Suspendisse fermentum placerat enim, at pellentesque augue elit est ?</h4>
-              <p>Vivamus euismod nunc eu leo faucibus, vel elementum justo posuere. In sed varius nisi.</p>
-            </div>
-            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.6s">
-              <h4>Ut vestibulum euismod aliquet. Quisque nec malesuada nibh ?</h4>
-              <p>Suspendisse fermentum placerat enim, at pellentesque augue. Nullam elit est, ultricies et tellus ac, euismod placerat orci. Donec commodo dapibus congue.</p>
-            </div>
-            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.6s">
-              <h4>Donec commodo dapibus congue ?</h4>
-              <p>Nullam elit est, ultricies et tellus ac, euismod placerat orci fermentum placerat enim, at pellentesque augue. Nullam elit est, ultricies et tellus ac, euismod placerat orci. Donec commodo dapibus congue.</p>
+              <h4>지속적인 학습과 성장</h4> <!-- 목표 제목 변경 -->
+              <p>저는 지속적인 자기 개발을 위해 다음과 같은 학습 계획을 가지고 있습니다:</p>
+              <ul>
+                <li>최신 기술 동향 학습: 매년 최소한 2~3개의 최신 기술 트렌드를 배우고, 이를 실무에 적용하여 시장에서 경쟁력을 유지할 것입니다.</li>
+                <li>오픈 소스 기여: GitHub와 같은 플랫폼에서 오픈 소스 프로젝트에 기여하여, 다양한 개발자들과 협업하며 코드 품질을 향상시키는 경험을 쌓겠습니다.</li>
+                <li>**온라인 코스와 자격증 취득**: 머신러닝, 클라우드 컴퓨팅, DevOps 등의 분야에서 온라인 코스를 듣고 관련 자격증을 취득하여 전문성을 높일 것입니다.</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -684,6 +779,7 @@
     </div>
   </div>
 </section>
+
 
 <!-------FAQ End-------> 
 
